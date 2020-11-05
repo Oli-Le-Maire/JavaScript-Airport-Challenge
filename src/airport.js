@@ -2,6 +2,7 @@
 
 class Airport{
   constructor() {
+    this._weather = typeof weather !== 'undefined' ? weather : new Weather();
     this._hangar = []
   }
   planes() {
